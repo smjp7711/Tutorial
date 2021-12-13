@@ -16,7 +16,8 @@ app.get('/', (req, res) => {
     res.send('Dashboard Page')
   })
   
-  app.get('/admin', authUser, authRole(ROLE.ADMIN), (req, res) => {
+  //app.get('/admin', authUser, authRole(ROLE.ADMIN), (req, res)
+  app.get('/admin', (req, res) => {
     res.send('Admin Page')
   })
   
